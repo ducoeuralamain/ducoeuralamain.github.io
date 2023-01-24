@@ -216,7 +216,8 @@ button {
 }
 
 .photo{
-  padding: 5px 0 6px 6px;
+  margin: auto;
+  border-radius: 6px;
 }
 
 .textpro{
