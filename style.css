@@ -8,9 +8,12 @@
   padding: 0;
 }
 
+html{
+  background-color: rgb(227, 240, 240);
+}
+
 body {
   font-family: Montserrat, Helvetica, sans-serif;
-  background: #CCEEFF
 }
 
 nav {
@@ -160,7 +163,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 6px 6px 0px 0px;
   cursor: pointer;
 }
 
@@ -365,6 +368,12 @@ footer{
   width: 100%;
 }
 
+.legacy{
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .copyright{
   font-size: 15px;
   text-align: center;
@@ -375,6 +384,44 @@ footer{
   text-align: center;
 }
 
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.slide {
+  width: calc(25% - 20px);
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  background: rgb(176,239,239);
+  background: linear-gradient(153deg, rgba(176,239,239,1) 0%, rgba(131,217,220,0.8464635854341737) 100%);
+}
+
+.slide img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.slide h3 {
+  margin-top: 10px;
+}
+
+.slide p {
+  margin-top: 5px;
+}
+
+hr {
+  border-top: 1px solid black;
+  margin: 10px 0;
+}
+
 @media (min-width: 1301px) {
   .error{
     visibility: hidden;
@@ -382,9 +429,8 @@ footer{
   }
   .derror{
     visibility: hidden;
-    display: none;
+    text-align: center;
   }
-}
 
 @media (max-width: 1300px) {
   nav {
@@ -452,7 +498,10 @@ footer{
     visibility: visible;
     text-align: center;
   }
-}
+  .ani{
+    visibility: visible;
+    text-align: center;
+  }
 
 @media (max-width: 500px) {
   .nav-icon img {
