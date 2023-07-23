@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="prestations">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,40 +41,46 @@
       </div>
     <script src="script.js"></script>
     </nav>
-    <h2 class="error">503 - Service indisponible</h2>
-    <p class="derror">La version mobile est encore en développement.<br>Merci de passer sur un ordinateur.</p>
     <main class="presta">
-        <h2 class="ttldomi">À domicile</h2>
-        <div class="slider">
-          <div class="slide">
-            <img src="/img/soinenergiedomicile.jpg">
-            <hr>
-            <h3>Soin énergétique à domicile</h3>
-            <p>Durée : 1 heure</p>
-            <p>Prix : 70€</p>
-          </div>
-          <div class="slide">
-            <img src="/img/grottedesel.jpg">
-            <hr>
-            <h3>Grotte de sel</h3>
-            <p>Durée : 1 heure</p>
-            <p>Prix : 75€</p>
-          </div>
-          <div class="slide">
-            <img src="/img/soinenergiedistance.jpg">
-            <hr>
-            <h3>Soin énergétique à distance</h3>
-            <p>Durée : 45 minutes</p>
-            <p>Prix : 40€</p>
-          </div>
-          <div class="slide">
-            <img src="/img/lahochi.jpg">
-            <hr>
-            <h3>Initiation au LaHoChi</h3>
-            <p>Durée : 4 heures</p>
-            <p>Prix : 150€</p>
-          </div>
+      <h2 class="ttldomi">À domicile</h2>
+      <!-- Le slider mobile -->
+      <div class="slider-container">
+        <input type="radio" id="slide1" name="slides" class="slide-input" checked>
+        <div class="slide">
+          <img src="/img/soinenergiedomicile.jpg" alt="Soin énergétique à domicile">
+          <hr>
+          <h3>Soin énergétique à domicile</h3>
+          <p>Durée : 1 heure</p>
+          <p>Prix : 70€</p>
         </div>
+  
+        <input type="radio" id="slide2" name="slides" class="slide-input">
+        <div class="slide">
+          <img src="/img/grottedesel.jpg" alt="Grotte de sel">
+          <hr>
+          <h3>Grotte de sel</h3>
+          <p>Durée : 1 heure</p>
+          <p>Prix : 75€</p>
+        </div>
+  
+        <input type="radio" id="slide3" name="slides" class="slide-input">
+        <div class="slide">
+          <img src="/img/soinenergiedistance.jpg" alt="Soin énergétique à distance">
+          <hr>
+          <h3>Soin énergétique à distance</h3>
+          <p>Durée : 45 minutes</p>
+          <p>Prix : 40€</p>
+        </div>
+  
+        <input type="radio" id="slide4" name="slides" class="slide-input">
+        <div class="slide">
+          <img src="/img/lahochi.jpg" alt="Initiation au LaHoChi">
+          <hr>
+          <h3>Initiation au LaHoChi</h3>
+          <p>Durée : 4 heures</p>
+          <p>Prix : 150€</p>
+        </div>
+      </div>
             <div class="contact">Contactez-moi <a href="mailto:ducoeuralamain.energeticienne@gmail.com">par mail</a> ou sur les réseaux.</div>
             <h3 class="ttlpure">Ou chez PureBreath</h3>
             <p class="embed">Réservez <a href="https://widget.addock.co/c2bb835941577c0e42990b7faabba4577f471c04/products" target="_blank">ici</a>.</p>

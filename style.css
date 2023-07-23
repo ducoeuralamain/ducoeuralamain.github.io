@@ -8,8 +8,8 @@
   padding: 0;
 }
 
-html{
-  background-color: rgb(227, 240, 240);
+.html{
+  background-image: url(/img/background.png);
 }
 
 body {
@@ -152,20 +152,6 @@ main{
   padding: 2%;
 }
 
-button {
-  font-family: 'Indie Flower', cursive;
-  font-weight: 200;
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 6px 6px 0px 0px;
-  cursor: pointer;
-}
 
 /*Litho*/
 
@@ -422,17 +408,9 @@ hr {
   margin: 10px 0;
 }
 
-@media (min-width: 1301px) {
-  .error{
-    visibility: hidden;
-    display: none;
-  }
-  .derror{
-    visibility: hidden;
-    text-align: center;
-  }
-
-@media (max-width: 1300px) {
+/* Media query pour les écrans de taille moyenne (tablettes) */
+@media screen and (max-width: 1300px) {
+  /* Réorganiser la disposition du menu de navigation sur les petits écrans */
   nav {
     padding: 15px 20px;
     position: relative;
@@ -470,44 +448,141 @@ hr {
     font-size: 18px;
     margin: 10px 0
   }
+}
 
-  .nav-authentication {
-    order: 3;
-    margin-left: 0;
+/* Media query pour les petits écrans */
+@media screen and (max-width: 500px) {
+  /* Ajustements pour les petits écrans */
+  html {
+    background-image: url("/img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
   }
-  .sign-btns {
-    display: none;
+  .apropos {
+    overflow-y: auto;
   }
-  .sign-user {
-    display: block;
-    cursor: pointer;
-    border: none;
+  .apro{
+    padding-top: 50px;
+    background-color: whitesmoke;
   }
-  .sign-user img {
-    width: 20px;
-  }
-  main{
-    visibility: hidden;
-    display: none;
-  }
-  .error{
-    visibility: visible;
-    text-align: center;
-  }
-  .derror{
-    visibility: visible;
-    text-align: center;
-  }
-  .ani{
-    visibility: visible;
-    text-align: center;
+  .textpro{
+    font-size: 14px;
   }
 
-@media (max-width: 500px) {
   .nav-icon img {
     width: 30px;
   }
   .nav-icon span {
-    font-size: 20px;
+    font-size: 13px;
+  }
+  main {
+    padding-top: 45%;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    width: 275px;
+    height: 150px;
+    background-color: white;
+    margin: auto;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .welcome_h3{
+    text-align: center;
+    padding-top: 15px;
+  }
+  .welcome_p{
+    padding: 10px;
+    font-size: 14px;
+  }
+  .button_case {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Pour occuper tout l'espace disponible en largeur */
+    max-width: 275px; /* Ajoutez une largeur maximale pour éviter que les boutons ne deviennent trop larges */
+    margin: auto;
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  /* Styles des boutons */
+  .button_case button {
+    flex: 1; /* Permet aux boutons de remplir tout l'espace disponible en hauteur */
+    width: 100%; /* Pour occuper tout l'espace disponible en largeur */
+    background-color: gray;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 0; /* Ajustez l'espace interne (padding) selon vos préférences */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 5px 0; /* Ajoute un espace entre les boutons */
+  }
+  .info{
+    font-size: 9px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+  .copyright{
+    font-size: 10.5px;
+  }
+  .credit{
+    font-size: 9px;
+  }
+
+  /*Prestations*/
+
+  .presta{
+    padding-top: 45px;
+    background-color: whitesmoke;
+  }
+
+  .slider-container {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+  }
+  /*Lithothérapie*/
+  .error{
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+}
+/* Media query pour les écrans de taille moyenne (tablettes) */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  /* Ajoutez ici vos styles pour les tablettes */
+  main {
+    padding-top: 130px; /* Augmenter légèrement l'espace au-dessus du contenu principal pour éviter de chevaucher le menu */
+  }
+}
+
+/* Media query pour les écrans larges (ordinateurs portables et écrans plus grands) */
+@media screen and (min-width: 1301px) {
+  /* Ajoutez ici vos styles pour les grands écrans */
+  .copyright{
+    font-size: 15px;
+  }
+  
+  .credit{
+    font-size: 12px;
   }
 }
